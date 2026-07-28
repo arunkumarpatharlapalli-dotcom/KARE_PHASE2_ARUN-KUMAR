@@ -12,3 +12,16 @@ public class Main
 		System.out.println("\\n");
 	}
 }
+
+// i/p                 o/p
+//10                   20
+//20                   10
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner obj=new Scanner(System.in);
+	    int a=obj.nextInt();
+		System.out.print(a);
+	}
+}
