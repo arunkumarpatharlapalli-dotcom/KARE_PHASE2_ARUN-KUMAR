@@ -1,0 +1,30 @@
+//1
+class Main {
+    public static void main(String[] args) {
+        if(true)
+        System.out.print("Hi");
+        else
+        System.out.print("Hello");       
+    }
+}
+//2
+class Main {
+    public static void main(String[] args) {
+        int a = 3;
+        if(a==4)
+        System.out.print(a+5);
+        else
+        System.out.print(a-8);
+    }
+}
+//3
+class Main {
+    public static void main(String[] args) {
+        if(2+2==4)
+        System.out.print("Welcome");
+        System.out.print("Update your details");
+        else
+        System.out.print("Thank you");
+    }
+}
+
