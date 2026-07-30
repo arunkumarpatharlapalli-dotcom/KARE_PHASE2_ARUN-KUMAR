@@ -36,5 +36,13 @@ class Main {
         System.out.print(5*6/2+10);
     }
 }
-
-
+//5
+class Main {
+    public static void main(String[] args) {
+        int a = 11;
+        int b = a--;
+        int x = 40;
+        int y = x++;
+        System.out.print(a+" "+b+" "+x+" "+y);
+    }
+}
