@@ -22,9 +22,19 @@ class Main {
     public static void main(String[] args) {
         if(2+2==4)
         System.out.print("Welcome");
-        System.out.print("Update your details");
+        ///System.out.print("Update your details");
         else
         System.out.print("Thank you");
     }
 }
+//4
+class Main {
+    public static void main(String[] args) {
+        if(!true)
+        System.out.print(2+3*5);
+        else
+        System.out.print(5*6/2+10);
+    }
+}
+
 
