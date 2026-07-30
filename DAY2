@@ -66,6 +66,8 @@ class Main {
         int d = --c;
         int e = d++;
         int f = e--;
-        System.out.print(a+" "+b+" "+c+" "+d+" "+e+" "+f);
+        System.out.println(f++);
+        System.out.println(a+" "+b+" "+c+" "+d+" "+e+" "+f);
     }
 }
+
