@@ -1,0 +1,55 @@
+//base 2 pattern
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        int i,row,col;
+        Scanner obj = new Scanner(System.in);
+        int n = obj.nextInt();
+        for(row=0;row<n;row++,System.out.println()) {
+            for(col=0;col<=row;col++)
+            System.out.print("*");
+        }
+    }
+}
+//base 3 pattern
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        int i,row,col;
+        Scanner obj = new Scanner(System.in);
+        int n = obj.nextInt();
+        for(row=0;row<n;row++,System.out.println()) {
+            for(col=0;col<2*row-1;col++)
+            System.out.print("*");
+        }
+    }
+}
