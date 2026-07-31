@@ -103,3 +103,20 @@ public class Main {
         }
     }
 } 
+//base 2+ 3 
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        int i,row,col;
+        Scanner obj = new Scanner(System.in);
+        int n = obj.nextInt();
+        for(row=0;row<n-1;row++,System.out.println()) {
+            for(col=0;col<=row;col++)
+            System.out.print("*");
+        }
+        for(row=0;row<n;row++,System.out.println()) {
+            for(col=0;col<n-row;col++)
+            System.out.print("*");
+        }    
+    }
+} 
