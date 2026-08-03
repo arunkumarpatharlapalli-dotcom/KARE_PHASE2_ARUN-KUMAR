@@ -1,0 +1,16 @@
+//reverse number
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        int d,ans=0;
+        while(n!=0)//4
+        {
+            d=n%10;//4%10=4
+            ans=ans*10+d;//65*10+4=654
+            n=n/10;//4/10=0
+        }
+        System.out.println("Reverse Number:"+ans);
+    }
+}
