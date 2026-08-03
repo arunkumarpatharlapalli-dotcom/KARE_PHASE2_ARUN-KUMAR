@@ -149,3 +149,23 @@ public class Main {
         }    
     }
 } 
+
+//i/p                        o/p 
+//5                          11111
+//                           22222 
+//                           33333
+//                           44444
+//                           55555
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int n = obj.nextInt();
+        for(int row=0;row<n;row++,System.out.println()) {
+            for(int col=0;col<n;col++) {
+                System.out.print(row+1);
+            }
+        }
+    }
+}
+
