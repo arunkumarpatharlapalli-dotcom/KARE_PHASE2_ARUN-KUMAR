@@ -14,6 +14,7 @@ class Main {
         System.out.println("Reverse Number:"+ans);
     }
 }
+
 //to count no of digits in the given Number
 //logic- n=4862
 //        486 c=1
@@ -33,5 +34,29 @@ class Main {
         }
             System.out.print(" No of digits:"+c);
         
+    }
+}
+
+//to count the odd even digits in the given Number
+//i/p                              o/p 
+//4821                             Odd digit count:1 
+//                                 Even digit count:3
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int n = obj.nextInt();
+        int ec=0,oc=0,d;
+        while(n!=0)
+        {
+            d=n%10;
+            if(d%2==0)
+            ec++;
+            else 
+            oc++;
+            n=n/10;
+        }
+        System.out.println("Odd digit count:"+oc);
+        System.out.println("Odd digit count:"+ec);
     }
 }
