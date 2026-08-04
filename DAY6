@@ -49,4 +49,35 @@ class Main {
         else 
         System.out.println("Not a Armstrong Number");
     }
-}   
+} 
+//Adam Number
+//n=12
+//find the square the given number sn=12*12=144
+//find the reverse of given number rn=21
+//find the square of reverse number srn = 21*21=441
+//reverse the square of reverse number = rsrn=144
+//compare sn==rsrn 144==144 if both are equal print ADAM NUMBER 
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int n = obj.nextInt();
+        int sn = n*n;
+        int rn = 0,d,ans=0;
+        while(n!=0) {
+            d=n%10;
+            rn=rn*10+d;
+            n=n/10;
+        }
+        int srn=rn*rn;
+        while(srn!=0) {
+            d=srn%10;
+            ans=ans*10+d;
+            srn=srn/10;
+        }
+        if(ans==sn)
+        System.out.print("Adam Number");
+        else
+        System.out.print("Not an Adam Number");
+    }
+}
