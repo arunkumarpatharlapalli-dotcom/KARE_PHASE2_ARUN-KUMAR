@@ -81,3 +81,34 @@ class Main {
         System.out.print("Not an Adam Number");
     }
 }
+
+//Amicable pair  (220,284),(1184,1210),(2620,2924)
+//get two number from user n1=220 n2=284
+//find the sum of factors of n1=s1
+//find the sum of factors of n2=s2
+//compare s1==n2 && s2==n1
+//if the condition is true print amicable pair 
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int n1 = obj.nextInt();
+        int n2 = obj.nextInt();
+        int i,j;
+        int s1=0,s2=0;
+        for(i=1;i<=n1/2;i++)
+        {
+            if(n1%i==0)
+            s1+=i;
+        }
+        for(j=1;j<=n2/2;j++)
+        {
+            if(n2%j==0)
+            s2 +=j;
+        }
+        if(s1==n2 && s2==n1)
+        System.out.print("amicable pair");
+        else 
+        System.out.print("Not a amicable pair");
+    }
+}
