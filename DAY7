@@ -39,3 +39,28 @@ class Main {
         System.out.print(arr[i]+" ");
     }
 }
+
+//to check the value is present in the array or not
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int n = obj.nextInt();
+        int arr[]=new int[n];
+        int i,arun=0;
+        for(i=0;i<n;i++)
+        arr[i]=obj.nextInt();
+        int t=obj.nextInt();
+        for(i=0;i<n;i++)
+        {
+            if(arr[i]==t)
+            {
+                arun=1;
+                System.out.print("present");
+                break;
+            }
+        }
+        if(arun==0)
+        System.out.print("Not present");
+    }
+}
