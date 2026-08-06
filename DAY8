@@ -39,7 +39,6 @@ class Main {
     }
 }
 
-// Missing Number 
 // i/p                     o/p 
 //5
 //0 1 0 1 0                 0 0 0 1 1                   
