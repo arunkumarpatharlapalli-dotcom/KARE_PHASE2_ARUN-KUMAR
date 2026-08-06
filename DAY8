@@ -97,7 +97,7 @@ class Main {
 //Minimum value
 // i/p                     o/p 
 // 5
-// 1 2 3 4              1 3 6 10
+// 1 2 3 4 5             1
 
 import java.util.*;
 class Main {
