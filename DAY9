@@ -24,3 +24,27 @@ class Main {
         }
     }
 }
+
+//to print primary and secondary diagonal elements
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int n=obj.nextInt();
+        int arr[][]=new int[n][n];
+        int i,j;
+        System.out.print("Enter array elements:");
+        for(i=0;i<n;i++) {
+            for(j=0;j<n;j++) {
+                arr[i][j] = obj.nextInt();
+            }
+        }
+        System.out.println("First Diagonal element");
+        for(i=0;i<n;i++)
+        System.out.print(arr[i][i]+" ");
+        System.out.println("Second Diagonal element");
+        for(i=0;i<n;i++)
+        System.out.print(arr[i][n-1-i]+" ");
+    }
+}
+        
