@@ -1,0 +1,24 @@
+//Inheritance
+
+class Father {
+    void gen2()
+    {
+        System.out.print("Gold");
+    }
+}
+class Son extends Father {
+    void gen3()
+    {
+        System.out.print("Diamond");
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Son obj = new Son();
+        Father f=new Father();
+        //f.gen2();//not accessible
+        //f.gen3();//not accessible
+        obj.gen3();
+        obj.gen2();
+    }
+}
