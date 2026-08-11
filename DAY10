@@ -22,3 +22,37 @@ class Main {
         obj.gen2();
     }
 }
+
+// Multilevel Inheritance
+
+class Grandfather {
+    void gen1()
+    {
+        System.out.print("Money");
+    }
+}
+class Father extends Grandfather {
+    void gen2()
+    {
+        System.out.print("Gold");
+    }
+}
+class Son extends Father {
+    void gen3()
+    {
+        System.out.print("Diamond");
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Son s=new Son();
+        s.gen3();//Diamond
+        s.gen2();//Gold
+        s.gen1();//Money
+        Father f=new Father();
+        f.gen2();
+        f.gen1();
+        Grandfather g=new Grandfather();
+        g.gen1();
+    }
+}
