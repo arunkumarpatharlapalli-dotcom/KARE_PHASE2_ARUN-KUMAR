@@ -10,3 +10,29 @@ class Bike
         Bike obj=new Bike();
       }
 }
+
+//2
+import java.util.*;
+class Student 
+{
+    int rollno;
+    String name;
+    Student(int r,String n)
+    { 
+        this.rollno=r;
+        this.name=n;
+    }
+    Student(Student obj)
+    {
+        obj.rollno=25;
+    }
+    void display()
+    {
+        System.out.println(rollno+" "+name);
+    }
+    public static void main(String[] args) {
+        Student po = new Student(1,"ABC");
+        Student ps = new Student(po);
+        po.display();
+    }
+}
