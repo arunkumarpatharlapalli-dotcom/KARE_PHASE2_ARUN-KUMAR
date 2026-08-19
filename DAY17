@@ -224,3 +224,113 @@ class Main{
                 temp = temp.next;
             } while(temp !=first);
         }}
+
+//sum of elements for circular singly L L
+import java.util.Scanner;
+
+class Node {
+    int data;
+    Node next;
+
+    Node(int data) {
+        this.data = data;
+    }
+}
+
+public class Main {
+    static int sumElements(Node head) {
+        if (head == null) return 0;
+
+        int sum = 0;
+        Node current = head;
+
+        do {
+            sum += current.data;
+            current = current.next;
+        } while (current != head);
+
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        Node head = null, tail = null;
+
+        for (int i = 0; i < n; i++) {
+            Node newNode = new Node(sc.nextInt());
+
+            if (head == null) {
+                head = newNode;
+                tail = newNode;
+            } else {
+                tail.next = newNode;
+                tail = newNode;
+            }
+        }
+
+        if (tail != null) {
+            tail.next = head; // make the list circular
+        }
+
+        System.out.println(sumElements(head));
+    }
+}
+
+//sum of the elements for circular doubly linked list 
+import java.util.Scanner;
+
+class Node {
+    int data;
+    Node next, prev;
+
+    Node(int data) {
+        this.data = data;
+    }
+}
+
+public class Main {
+
+    static int sumElements(Node head) {
+        if (head == null) return 0;
+
+        int sum = 0;
+        Node current = head;
+
+        do {
+            sum += current.data;
+            current = current.next;
+        } while (current != head);
+
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        Node head = null, tail = null;
+
+        for (int i = 0; i < n; i++) {
+            Node newNode = new Node(sc.nextInt());
+
+            if (head == null) {
+                head = newNode;
+                tail = newNode;
+            } else {
+                tail.next = newNode;
+                newNode.prev = tail;
+                tail = newNode;
+            }
+        }
+
+        // Make the doubly linked list circular
+        if (head != null) {
+            tail.next = head;
+            head.prev = tail;
+        }
+
+        System.out.println(sumElements(head));
+    }
+}
